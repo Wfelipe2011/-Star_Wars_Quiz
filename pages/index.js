@@ -61,7 +61,7 @@ export default function Home() {
 
         </Footer>
 
-        <GitHubCorner projectUrl="" />
+        <GitHubCorner projectUrl="https://github.com/Wfelipe2011" />
       </QuizContainer>
     
     
