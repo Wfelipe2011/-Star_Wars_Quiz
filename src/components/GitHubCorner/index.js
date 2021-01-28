@@ -8,6 +8,8 @@ const Wrapper = styled.div`
   border: 0;
   right: 0;
   z-index: 20;
+  
+  
 `;
 
 const SVGWrapper = styled.svg`
@@ -29,6 +31,15 @@ const SVGWrapper = styled.svg`
     & .octo-arm{
       animation:octocat-wave 560ms ease-in-out
     }
+  }
+
+
+
+  @media (min-width: 375px){
+   left: 15%;
+  }
+  @media (min-width:321px){
+    right: -20px;
   }
 `;
 
