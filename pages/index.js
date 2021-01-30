@@ -15,6 +15,7 @@ import Input from '../src/components/input';
 import Button from '../src/components/Button';
 import QuizContainer from '../src/components/QuizContainer';
 import Link from '../src/components/Link';
+import BackgroundImg from '../src/components/BackgroundImg';
 
 // eslint-disable-next-line no-lone-blocks
 /* // const BackgroundImage = styled.div`
