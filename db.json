@@ -1,12 +1,12 @@
 {
-    "bg": "https://wallpapermemory.com/uploads/839/star-wars-wallpaper-hd-1920x1200-459148.jpg",
+    "bg": "https://i.ibb.co/4gpcYsY/fundo.jpg",
     "title": "Quiz Star Wars",
-    "loading": "https://media.giphy.com/media/hWGI9TQGsKsdBcxRi5/giphy.gif",
+    "loading": "https://i.ibb.co/ZTPm5Bm/loading.gif",
     "description": "Carregando...",
     "sound": "https://www.youtube.com/watch?v=aQlZg0zenfQ&ab_channel=PeterPlutaX",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/mI6gOKHbIFT5m/giphy.gif",
+        "image": "https://i.ibb.co/9WcJ4Ws/pergunta1.gif",
         "title": "Em qual planeta Anakin luta contra Obi Wan Kenobi?",
         "description": "Essa é pra aquecer",
         "answer": 1,
@@ -18,7 +18,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/ugFzEiuHAvYnm/giphy.gif",
+        "image": "https://i.ibb.co/K7QMK51/pergunta2.gif",
         "title": "Qual o nome do antigo mestre de Obi Wan??",
         "description": "",
         "answer": 1,
@@ -30,7 +30,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/e7FOBuKCDtwWI/giphy.gif",
+        "image": "https://i.ibb.co/M5LRXJR/pergunta3.gif",
         "title": "Qual é a cor do sabre dos Sith?",
         "description": "Olha a dica",
         "answer": 0,
@@ -42,7 +42,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/3oeSAJk8TPBnNbIqxG/giphy.gif",
+        "image": "https://i.ibb.co/LhMTN07/pergunta4.gif",
         "title": "O que Luke e Léia são?",
         "description": "",
         "answer": 3,
@@ -54,7 +54,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/KGmoTveWlSxJS/giphy.gif",
+        "image": "https://i.ibb.co/5MrM9t6/pergunta5.gif",
         "title": "Qual o nome do andróide que sempre aparece em todos os filmes?",
         "description": "",
         "answer": 3,
@@ -66,7 +66,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/xT9DPpf0zTqRASyzTi/giphy.gif",
+        "image": "https://i.ibb.co/Hqrjhm3/pergunta6.gif",
         "title": "Qual é a frase mais famosa que Darth Vader disse a Luke?",
         "description": "",
         "answer": 1,
@@ -78,7 +78,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/xTiIzHJyaDjBJzWKnS/giphy.gif",
+        "image": "https://i.ibb.co/j64Tjk6/pergunta7.gif",
         "title": "Qual a relação entre Darth Vader e Anakin Skywalker?",
         "description": "",
         "answer": 3,
@@ -90,7 +90,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/xT9DPBPC4gVoSau0eI/giphy.gif",
+        "image": "https://i.ibb.co/dP4zD5X/pergunta8.gif",
         "title": "Quantos anos o Yoda tinha antes de morrer?",
         "description": "",
         "answer": 3,
@@ -103,7 +103,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/l2JJOhaiTmwJSYaVG/giphy.gif",
+        "image": "https://i.ibb.co/vvWTVLJ/pergunta9.gif",
         "title": "Houve quantas estrelas da morter?",
         "description": "",
         "answer": 1,
@@ -116,7 +116,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/mT1SJO4ZXMKE8/giphy.gif",
+        "image": "https://i.ibb.co/THSHPDG/pergunta10.gif",
         "title": "Qual é a raça do Povo da Areia de Tatooine?",
         "description": "",
         "answer": 0,

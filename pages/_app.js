@@ -1,7 +1,7 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import db from '../db.json'
 import Head from 'next/head';
-import BackgroundImg from '../src/components/BackgroundImg';
+
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -41,12 +41,12 @@ export default function App({ Component, pageProps }) {
       
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-      <BackgroundImg image={db.images}>
+     
         <Component {...pageProps} />
         <iframe width="1" height="1" 
         src={db.sound}
          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </BackgroundImg>
+        
       </ThemeProvider>
     </>
   )
