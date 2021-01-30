@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const AlternativesForm = styled.form`
   label {
     &[data-selected="true"] {
-      color: ${({theme}) => theme.colors.primary};
+      color: ${({theme}) => theme.colors.secondary};
       font-weight: bold;
-      background-color: ${({ theme }) => theme.colors.secondary};
+      background-color: ${({ theme }) => theme.colors.primary};
       
       &[data-status="SUCCESS"] {
         color: white;

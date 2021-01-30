@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const FooterWrapper = styled.footer`
   background-color: #00000070;
   
-  border: 4px solid ${({ theme }) => theme.colors.secondary};
+  border: 4px solid ${({ theme }) => theme.colors.primary};
   border-radius: 200px;
   color: white;
   padding: 10px;

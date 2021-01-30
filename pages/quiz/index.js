@@ -1,12 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizContainer from '../src/components/QuizContainer';
-import Button from '../src/components/Button';
-import AlternativesForm from '../src/components/AlternativesForm';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizContainer from '../../src/components/QuizContainer';
+import Button from '../../src/components/Button';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import BackLinkArrow from '../../src/components/BlackLinkArrow';
 
 function LoadingWidget() {
 
@@ -15,20 +16,24 @@ function LoadingWidget() {
     <Widget>
       <Widget.Header>
         <Widget.Logo>
+          <Widget.Carregando>
           {db.description}
+          </Widget.Carregando>
+          
         </Widget.Logo>
-      </Widget.Header>
-      <Widget.Content>
-      <img
-        alt="Descrição"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
-        src={db.loading}
-        />
-      </Widget.Content>
+          </Widget.Header>
+          <Widget.Content>
+          <img
+            alt="Loading"
+            style={{
+              borderRadius: '80px',
+              width: '100%',
+              height: '230px',
+              objectFit: 'cover',
+            }}
+            src={db.loading}
+            />
+          </Widget.Content>
     </Widget>
   )
 }
@@ -92,8 +97,9 @@ function QuestionWidget ({
     return (
       <Widget>
       <Widget.Header>
+      <BackLinkArrow href="/"/>
         <Widget.Logo>
-           {`Pergunta ${questionIndex + 1} de ${totalQuestion}`}
+         {`Pergunta ${questionIndex + 1} de ${totalQuestion}`}
         </Widget.Logo>
         
       </Widget.Header>

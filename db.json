@@ -2,7 +2,7 @@
     "bg": "https://wallpapermemory.com/uploads/839/star-wars-wallpaper-hd-1920x1200-459148.jpg",
     "title": "Quiz Star Wars",
     "loading": "https://media.giphy.com/media/hWGI9TQGsKsdBcxRi5/giphy.gif",
-    "description": "Descubra se você é um verdadeiro fã de Star Wars",
+    "description": "Carregando...",
     "questions": [
       {
         "image": "https://media.giphy.com/media/mI6gOKHbIFT5m/giphy.gif",
@@ -129,12 +129,14 @@
       }
     ],
     "external": [
-      ""
+      "https://react-immersion-quiz.cintia-teixeira.vercel.app/",
+      "https://aluraquiz.josafaverissimo.vercel.app/"
+
     ],
     "theme": {
       "colors": {
-        "primary": "#212121",
-        "secondary": "#ffff00",
+        "primary": "#ffff00",
+        "secondary": "#212121",
         "mainBg": "#171B35",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",

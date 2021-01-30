@@ -3,19 +3,19 @@ import styled from 'styled-components'
 const Widget = styled.div`
 margin-top: 24px;
 margin-bottom: 24px;
-border: 1px solid ${({ theme }) => theme.colors.secondary};
-background-color:  ${({ theme }) => theme.colors.primary};
+border: 1px solid ${({ theme }) => theme.colors.primary};
+background-color:  ${({ theme }) => theme.colors.secondary};
 // Ou assim
 color: ${({ theme }) =>{
-    return theme.colors.secondary
+    return theme.colors.primary
 }};
 
 
 
 @keyframes efeito-logo{
-    0%{border: 3px solid ${({ theme }) => theme.colors.secondary}; }
+    0%{border: 3px solid ${({ theme }) => theme.colors.primary}; }
     50%{border: 3px solid #666600; color:#666600; }
-    100%{border: 3px solid ${({ theme }) => theme.colors.secondary}}
+    100%{border: 3px solid ${({ theme }) => theme.colors.primary}}
 }
 
 border-radius: 6px;
@@ -39,7 +39,7 @@ Widget.Header = styled.header`
   justify-content: flex-start;
   align-items: center;
   padding: 3% 10%;
-  background-color: ${({ theme }) => theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors.primary};
    
   * {
     margin: 0;
@@ -57,9 +57,9 @@ font-size: 18px;
 line-height: 1.2;
 font-weight: bold;
 border-radius: 50px;
-border: 3px solid ${({ theme }) => theme.colors.secondary};
-background-color: ${({ theme }) => theme.colors.primary} ;
-color: ${({ theme }) => theme.colors.secondary};
+border: 3px solid ${({ theme }) => theme.colors.primary};
+background-color: ${({ theme }) => theme.colors.secondary} ;
+color: ${({ theme }) => theme.colors.primary};
 text-align: center;
 left: 0;
 width: 500px;
@@ -91,7 +91,7 @@ Widget.Topic = styled.a`
   outline: 0;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.contrastText};
-  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  background-color: ${({ theme }) => `${theme.colors.secondary}40`};
   padding: 10px 15px;
   margin-bottom: 8px;
   cursor: pointer;
@@ -103,10 +103,87 @@ Widget.Topic = styled.a`
   &:focus {
     opacity: .5;
   }
-`;
+`
 
+Widget.Galera = styled.a`
+      
+      outline: 0;
+      text-decoration: none;
+      color: ${({ theme }) => theme.colors.contrastText};
+      background-color: ${({ theme }) => `${theme.colors.secondary}40`};
+      padding: 3px 5px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      border-radius: ${({ theme }) => theme.borderRadius};
+      transition: .3s;
+      display: block;
+      
+      font-size: 14px;
+      border-radius: 20px;
+      text-align: center;
+      &:hover,
+      &:focus {
+        color: ${({ theme }) => theme.colors.secondary};
+        font-weight: bold;
+        background-color: ${({ theme }) => theme.colors.primary};
+  }
+      
+`
+
+Widget.Carregando = styled.div`
+@keyframes Carregando{
+    0%{background-color:  ${({ theme }) => theme.colors.secondary}; }
+    50%{background-color: ${({ theme }) => theme.colors.primary}; color: ${({ theme }) => theme.colors.secondary} ;  padding: 1%; }
+    100%{background-color:  ${({ theme }) => theme.colors.primary}; color: ${({ theme }) => theme.colors.secondary} ; font-size: 20px;  padding: 1%; }
+}
+
+animation-name: Carregando;
+animation-duration: 6s;
+animation-delay: 1s;
+
+padding: 2%;
+font-size: 18px;
+line-height: 1.2;
+font-weight: bold;
+border-radius: 50px;
+border: 3px solid ${({ theme }) => theme.colors.primary};
+background-color: ${({ theme }) => theme.colors.secondary} ;
+color: ${({ theme }) => theme.colors.primary};
+text-align: center;
+left: 0;
+
+`
+
+Widget.Img = styled.img`
+
+  div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  transform: scale(5);
+}
+
+.c-loader {
+  animation: is-rotating 1s infinite;
+  border: 6px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #51d4db;
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+`
 
 Widget.Content = styled.div`
+
 padding: 24px 32px 32px 32px;
 & > *::first-child {
 margin-top: 0;
@@ -124,13 +201,14 @@ input {
   padding: 2%;
   margin: auto;
   margin-left: 5%;
+  width: 255px;
   font-size: 18px;
   line-height: 1.2;
   font-weight: bold;
   border-radius: 50px;
-  border: 3px solid ${({ theme }) => theme.colors.secondary};
-  background-color: ${({ theme }) => theme.colors.primary} ;
-  color: ${({ theme }) => theme.colors.secondary};
+  border: 3px solid ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.secondary} ;
+  color: ${({ theme }) => theme.colors.primary};
   text-align: center;
 }
 @media screen and (max-width: 426px) {
@@ -157,9 +235,9 @@ button {
   line-height: 1.2;
   font-weight: bold;
   border-radius: 50px;
-  border: 3px solid ${({ theme }) => theme.colors.secondary};
-  background-color: ${({ theme }) => theme.colors.primary} ;
-  color: ${({ theme }) => theme.colors.secondary};
+  border: 3px solid ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.secondary} ;
+  color: ${({ theme }) => theme.colors.primary};
   text-align: center;
 }
 
@@ -180,8 +258,8 @@ button {
 }
 
 button:hover {
-  background-color: ${({ theme }) => theme.colors.secondary} ;
-  color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.primary} ;
+  color: ${({ theme }) => theme.colors.secondary};
 }
 `;
 

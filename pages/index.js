@@ -58,21 +58,36 @@ export default function Home() {
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
-                {`Jogar ${name}`}
+                {`Jogador ${name}`}
               </Button>
             </form>
           </Widget.Content>
         </Widget>
 
         <Widget>
+        <Widget.Header>
+            <Widget.Logo>Quiz da Galera</Widget.Logo> 
+        </Widget.Header>
           <Widget.Content>
-            <h1>Quiz a Galera </h1>
+            <ul>
+              {db.external.map((linkExterno) => {
+                const [projectName, user] =  linkExterno
+                .replace('https://', '')
+                .replace('.vercel.app/', '')
+                .replace('/', '')
+                .split('.');
 
-            <p>
-              Este exemplo demonstra diferentes alturas de linha. Você pode alterar
-              a altura da linha clicando em uma das propriedades da altura da linha à esquerda.
-              Este texto é onde você verá o resultado da propriedade de altura de linha selecionada.
-            </p>
+              return (
+                    <li key={linkExterno}>
+                      <Widget.Galera
+                       href={`/quiz/${projectName}___${user}`}
+                       >
+                        <Widget.Galera>{`${user}/${projectName}`}</Widget.Galera>
+                      </Widget.Galera>
+                    </li>
+                );
+              })}
+            </ul>
           </Widget.Content>
         </Widget>
         <Footer />
