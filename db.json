@@ -1,13 +1,14 @@
 {
     "bg": "https://wallpapermemory.com/uploads/839/star-wars-wallpaper-hd-1920x1200-459148.jpg",
     "title": "Quiz Star Wars",
-    "description": "Descubra se você é um vrdadeiro fã de Star Wars",
+    "loading": "https://media.giphy.com/media/hWGI9TQGsKsdBcxRi5/giphy.gif",
+    "description": "Descubra se você é um verdadeiro fã de Star Wars",
     "questions": [
       {
-        "image": "https://static.quizur.com/i/b/553b0a133f9665.08335114553b0a1303c501.54740602.jpg",
+        "image": "https://media.giphy.com/media/mI6gOKHbIFT5m/giphy.gif",
         "title": "Em qual planeta Anakin luta contra Obi Wan Kenobi?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
           "Tattoine",
           "Mustafar",
@@ -16,10 +17,10 @@
         ]
       },
       {
-        "image": "https://static.quizur.com/i/b/553b0afe3f9227.05930030553b0afe2ed986.39803978.jpg",
+        "image": "https://media.giphy.com/media/ugFzEiuHAvYnm/giphy.gif",
         "title": "Qual o nome do antigo mestre de Obi Wan??",
         "description": "",
-        "answer": 0,
+        "answer": 1,
         "alternatives": [
           "Dookan",
           "Qui Gon Jinn",
@@ -28,9 +29,9 @@
         ]
       },
       {
-        "image": "https://static.quizur.com/i/b/553b0bd063b8f5.11641149553b0bd04c69e7.72887039.jpg",
+        "image": "https://media.giphy.com/media/e7FOBuKCDtwWI/giphy.gif",
         "title": "Qual é a cor do sabre dos Sith?",
-        "description": "",
+        "description": "Olha a dica",
         "answer": 0,
         "alternatives": [
           "Vermelho",
@@ -40,10 +41,10 @@
         ]
       },
       {
-        "image": "https://static.quizur.com/i/b/553b0c0e059e53.19392089553b0c0deb2e66.68937017.jpg",
+        "image": "https://media.giphy.com/media/3oeSAJk8TPBnNbIqxG/giphy.gif",
         "title": "O que Luke e Léia são?",
         "description": "",
-        "answer": 0,
+        "answer": 3,
         "alternatives": [
           "Amigos",
           "Primos",
@@ -52,10 +53,10 @@
         ]
       },
       {
-        "image": "https://static.quizur.com/i/b/553b0c471e0c73.82773573553b0c4709b509.63235005.jpg",
+        "image": "https://media.giphy.com/media/KGmoTveWlSxJS/giphy.gif",
         "title": "Qual o nome do andróide que sempre aparece em todos os filmes?",
         "description": "",
-        "answer": 0,
+        "answer": 3,
         "alternatives": [
           "R2-D2",
           "C-3D2",
@@ -64,10 +65,10 @@
         ]
       },
       {
-        "image": "https://static.quizur.com/i/b/553b0e70c96770.69643797553b0e70bbbd54.41769745.jpg",
+        "image": "https://media.giphy.com/media/xT9DPpf0zTqRASyzTi/giphy.gif",
         "title": "Qual é a frase mais famosa que Darth Vader disse a Luke?",
         "description": "",
-        "answer": 0,
+        "answer": 1,
         "alternatives": [
           "Não Luke, eu sou seu pai",
           "Não, eu sou seu pai",
@@ -76,10 +77,10 @@
         ]
       },
       {
-        "image": "https://static.quizur.com/i/b/553b0fe12a7d21.06631710553b0fe11d2453.00112167.jpg",
+        "image": "https://media.giphy.com/media/xTiIzHJyaDjBJzWKnS/giphy.gif",
         "title": "Qual a relação entre Darth Vader e Anakin Skywalker?",
         "description": "",
-        "answer": 0,
+        "answer": 3,
         "alternatives": [
           "Nenhuma relação",
           "Irmãos",
@@ -88,14 +89,41 @@
         ]
       },
       {
-        "image": "https://static.quizur.com/i/b/553d779e2c4e65.36231097553d779e11a9b3.58776290.jpg",
-        "title": "Qual dos filmes abaixo foi lançado por último?",
+        "image": "https://media.giphy.com/media/xT9DPBPC4gVoSau0eI/giphy.gif",
+        "title": "Quantos anos o Yoda tinha antes de morrer?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+          "850 anos ",
+          "905 anos",
+          "50 anos",
+          "900 anos"
+          
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l2JJOhaiTmwJSYaVG/giphy.gif",
+        "title": "Houve quantas estrelas da morter?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+          "1",
+          "2",
+          "3",
+          "4"
+          
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/mT1SJO4ZXMKE8/giphy.gif",
+        "title": "Qual é a raça do Povo da Areia de Tatooine?",
         "description": "",
         "answer": 0,
         "alternatives": [
-          "Episódio VI: O Retorno de Jedi ",
-          "Episódio V: O Império Contra-Ataca",
-          "Episódio II: Ataque dos Clones"
+          "Tusken ",
+          "Korun",
+          "ZABRAK",
+          "Twi'lek"
           
         ]
       }
