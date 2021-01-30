@@ -123,7 +123,7 @@ function QuestionWidget ({
             onSubmit();
             setIsQuestionSubmit(false);
             setSelectedAlternative(undefined);
-          }, 3 * 1000);
+          }, 4 * 1000);
           
         }}>
           {question.alternatives.map((alternative, alternativeIndex) => {
@@ -202,7 +202,7 @@ export default function QuizPage() {
   React.useEffect(()=>{
     setTimeout(() =>{
      setScreenState(screenStates.QUIZ);
-    }, 1 * 4000);
+    }, 1 * 6000);
     //nasce (didMount)
   }, []);
 
