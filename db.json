@@ -129,8 +129,9 @@
       }
     ],
     "external": [
-      "https://react-immersion-quiz.cintia-teixeira.vercel.app/",
-      "https://aluraquiz.josafaverissimo.vercel.app/"
+      "https://aluraquiz-base.alura-challenges.vercel.app/",
+      "https://aluraquiz.josafaverissimo.vercel.app/",
+      "https://quiz-git-main.ganiell.vercel.app/"
 
     ],
     "theme": {

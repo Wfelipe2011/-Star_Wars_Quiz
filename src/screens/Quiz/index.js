@@ -41,7 +41,18 @@ function LoadingWidget() {
 
 function ResultWidget( { results }) {
   return(
-    <Widget>
+    <Widget 
+    as={motion.section}
+          transition={{
+            delay: 0.5,
+            duration: 0.8
+          }}
+          variants={{
+            show: {opacity: 1, y: '0' },
+            hidden: {opacity: 0, y:'100%' },
+          }}
+          initial="hidden"
+          animate="show">
       <Widget.Header>
         <Widget.Logo>
          Tela de Resultado:

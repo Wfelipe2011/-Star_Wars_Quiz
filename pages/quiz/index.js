@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import {motion} from 'framer-motion';
 import db from '../../db.json';
 import Widget from '../../src/components/Widget';
 import QuizBackground from '../../src/components/QuizBackground';
@@ -40,7 +41,19 @@ function LoadingWidget() {
 
 function ResultWidget( { results }) {
   return(
-    <Widget>
+    <Widget 
+            as={motion.section}
+            transition={{
+              delay: 0.5,
+              duration: 0.8
+            }}
+            variants={{
+              show: {opacity: 1, y: '0' },
+              hidden: {opacity: 0, y:'100%' },
+            }}
+            initial="hidden"
+            animate="show"
+    >
       <Widget.Header>
         <Widget.Logo>
          Tela de Resultado:
@@ -95,7 +108,19 @@ function QuestionWidget ({
     const hasAlternativeSelected = selectedAlternative !== undefined;
     
     return (
-      <Widget>
+      <Widget
+      as={motion.section}
+        transition={{
+          delay: 0.5,
+          duration: 1.2
+        }}
+        variants={{
+          show: {opacity: 1, x: '0' },
+          hidden: {opacity: 0, x:'100%' },
+        }}
+        initial="hidden"
+        animate="show"
+      >
       <Widget.Header>
       <BackLinkArrow href="/"/>
         <Widget.Logo>
@@ -112,7 +137,9 @@ function QuestionWidget ({
         }}
         src={question.image}
         />
-      <Widget.Content>
+      <Widget.Content
+       
+      >
         <h2>
         {question.title}
         </h2>
@@ -138,11 +165,15 @@ function QuestionWidget ({
             const isSelected = selectedAlternative === alternativeIndex;
             return (
               <Widget.Topic
+                
                 as="label"
                 key={alternativeId}
                 htmlFor={alternativeId}
                 data-selected={isSelected}
                 data-status={isQuestioSubmit && alternativeStatus}
+                as={motion.label}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
                 
                 <input
@@ -160,7 +191,11 @@ function QuestionWidget ({
             {JSON.stringify(question, null, 4)}
             </pre>
           */}
-            <Button type="submit" disabled={!hasAlternativeSelected}>
+            <Button type="submit" disabled={!hasAlternativeSelected}
+             as={motion.button}
+             whileHover={{ scale: 1.1 }}
+             whileTap={{ scale: 0.9 }}
+            >
               Confirmar
             </Button>
             {/*

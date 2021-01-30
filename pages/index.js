@@ -2,6 +2,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import styled from 'styled-components';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import React from 'react';
 import db from '../db.json';
@@ -13,6 +14,7 @@ import QuizLogo from '../src/components/QuizLogo';
 import Input from '../src/components/input';
 import Button from '../src/components/Button';
 import QuizContainer from '../src/components/QuizContainer';
+import Link from '../src/components/Link';
 
 // eslint-disable-next-line no-lone-blocks
 /* // const BackgroundImage = styled.div`
@@ -36,9 +38,23 @@ export default function Home() {
         <title>AluraQuiz- StarWars</title>
       </Head>
       <QuizContainer>
-
-        <QuizLogo />
-        <Widget>
+        <QuizLogo
+           
+        />
+        <Widget 
+          as={motion.section}
+          transition={{
+            delay: 0.5,
+            duration: 0.8
+          }}
+          variants={{
+            show: {opacity: 1, y: '0' },
+            hidden: {opacity: 0, y:'100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        
+        >
           <Widget.Header>
             <Widget.Logo>Quiz Star Wars</Widget.Logo>
           </Widget.Header>
@@ -57,19 +73,35 @@ export default function Home() {
                 placeholder="Nome do Jogador"
                 value={name}
               />
-              <Button type="submit" disabled={name.length === 0}>
-                {`Jogador ${name}`}
+              <Button type="submit" disabled={name.length === 0}
+                  as={motion.button}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+              >
+               {`Jogador ${name}`}
               </Button>
             </form>
           </Widget.Content>
         </Widget>
-
-        <Widget>
+       
+        <Widget
+        as={motion.section}
+        transition={{
+          delay: 0.5,
+          duration: 1.2
+        }}
+        variants={{
+          show: {opacity: 1, y: '0' },
+          hidden: {opacity: 0, y:'100%' },
+        }}
+        initial="hidden"
+        animate="show"
+        >
         <Widget.Header>
             <Widget.Logo>Quiz da Galera</Widget.Logo> 
         </Widget.Header>
           <Widget.Content>
-            <ul>
+            <ul >
               {db.external.map((linkExterno) => {
                 const [projectName, user] =  linkExterno
                 .replace('https://', '')
@@ -78,8 +110,9 @@ export default function Home() {
                 .split('.');
 
               return (
-                    <li key={linkExterno}>
+                    <li key={linkExterno}  >
                       <Widget.Galera
+                        as={Link}
                        href={`/quiz/${projectName}___${user}`}
                        >
                         <Widget.Galera>{`${user}/${projectName}`}</Widget.Galera>
@@ -90,7 +123,19 @@ export default function Home() {
             </ul>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer
+        as={motion.section}
+        transition={{
+          delay: 0.5,
+          duration: 1.4
+        }}
+        variants={{
+          show: {opacity: 1, y: '0' },
+          hidden: {opacity: 0, y:'100%' },
+        }}
+        initial="hidden"
+        animate="show"
+        />
 
         <GitHubCorner projectUrl="https://github.com/Wfelipe2011" />
       </QuizContainer>
