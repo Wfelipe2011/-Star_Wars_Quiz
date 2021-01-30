@@ -1,28 +1,30 @@
 {
     "bg": "https://wallpapermemory.com/uploads/839/star-wars-wallpaper-hd-1920x1200-459148.jpg",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "Quiz Star Wars",
+    "description": "Descubra se você é um vrdadeiro fã de Star Wars",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://static.quizur.com/i/b/553b0a133f9665.08335114553b0a1303c501.54740602.jpg",
+        "title": "Em qual planeta Anakin luta contra Obi Wan Kenobi?",
         "description": "Essa é pra aquecer",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Tattoine",
+          "Mustafar",
+          "Dagobah",
+          "Coruscant"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://static.quizur.com/i/b/553b0afe3f9227.05930030553b0afe2ed986.39803978.jpg",
+        "title": "Qual o nome do antigo mestre de Obi Wan??",
+        "description": "",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "Dookan",
+          "Qui Gon Jinn",
+          "Mace Windu",
+          "Yoda"
         ]
       }
     ],

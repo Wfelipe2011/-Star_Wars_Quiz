@@ -10,7 +10,9 @@ import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
-
+import Input from '../src/components/input';
+import Button from '../src/components/Button';
+import QuizContainer from '../src/components/QuizContainer';
 
 // eslint-disable-next-line no-lone-blocks
 /* // const BackgroundImage = styled.div`
@@ -21,16 +23,7 @@ import QuizLogo from '../src/components/QuizLogo';
 //`;
 */
 
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+
 
 export default function Home() {
   const router = useRouter();
@@ -51,24 +44,22 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
            
-            <form onSubmit={function (event) {
+            <form onSubmit={function (event) { //ou ()=>
               // Para evitar comportamento de reload da pagina
               event.preventDefault();
               // Forma de navegar no next
               router.push(`/quiz?name=${name}`);
             }}
             >
-              <input
-                onChange={function (event) {
-                // Usar o useStage para react ver as modificaçoes.
-                  setName(event.target.value);
-                }}
-                placeholder="Digite o seu nome"
+              <Input
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                placeholder="Nome do Jogador"
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogador: <span> </span>{name}
-                
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
