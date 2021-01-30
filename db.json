@@ -26,6 +26,78 @@
           "Mace Windu",
           "Yoda"
         ]
+      },
+      {
+        "image": "https://static.quizur.com/i/b/553b0bd063b8f5.11641149553b0bd04c69e7.72887039.jpg",
+        "title": "Qual é a cor do sabre dos Sith?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+          "Vermelho",
+          "Roxo",
+          "Azul",
+          "Verde"
+        ]
+      },
+      {
+        "image": "https://static.quizur.com/i/b/553b0c0e059e53.19392089553b0c0deb2e66.68937017.jpg",
+        "title": "O que Luke e Léia são?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+          "Amigos",
+          "Primos",
+          "Namorados",
+          "Irmãos"
+        ]
+      },
+      {
+        "image": "https://static.quizur.com/i/b/553b0c471e0c73.82773573553b0c4709b509.63235005.jpg",
+        "title": "Qual o nome do andróide que sempre aparece em todos os filmes?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+          "R2-D2",
+          "C-3D2",
+          "R2-PO",
+          "C-3PO"
+        ]
+      },
+      {
+        "image": "https://static.quizur.com/i/b/553b0e70c96770.69643797553b0e70bbbd54.41769745.jpg",
+        "title": "Qual é a frase mais famosa que Darth Vader disse a Luke?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+          "Não Luke, eu sou seu pai",
+          "Não, eu sou seu pai",
+          "Eu não sou seu pai"
+          
+        ]
+      },
+      {
+        "image": "https://static.quizur.com/i/b/553b0fe12a7d21.06631710553b0fe11d2453.00112167.jpg",
+        "title": "Qual a relação entre Darth Vader e Anakin Skywalker?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+          "Nenhuma relação",
+          "Irmãos",
+          "Pai e filho",
+          "A mesma pessoa"
+        ]
+      },
+      {
+        "image": "https://static.quizur.com/i/b/553d779e2c4e65.36231097553d779e11a9b3.58776290.jpg",
+        "title": "Qual dos filmes abaixo foi lançado por último?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+          "Episódio VI: O Retorno de Jedi ",
+          "Episódio V: O Império Contra-Ataca",
+          "Episódio II: Ataque dos Clones"
+          
+        ]
       }
     ],
     "external": [
