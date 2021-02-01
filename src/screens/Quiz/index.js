@@ -204,7 +204,7 @@ vai morre (willUnmount)=== vai sair da tela {pode fazer algo programado}
 React.useEffect
 */
 export default function QuizPage({ externalQuestion, externalBg }) {
-  const [screenState, setScreenState] = React.useState(screenStates.LOADING);
+  const [screenState, setScreenState] = React.useState(screenStates.RESULT);
   const [results, setResult] = React.useState([]);
   const totalQuestion = externalQuestion.length;
   const [currentQuestion, setCurrentQuestion]  = React.useState(0);

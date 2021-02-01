@@ -59,7 +59,20 @@ function ResultWidget( { results }) {
          Tela de Resultado:
         </Widget.Logo>
       </Widget.Header>
+        
+            <img
+              alt="Loading"
+              style={{
+                borderRadius: '80px',
+                width: '100%',
+                height: '230px',
+                objectFit: 'cover',
+              }}
+              src={"https://media.giphy.com/media/5UqQOhnfQbg4IG0utP/giphy.gif"}
+              />
+           
       <Widget.Content>
+      <Widget.Galera>
         <p>Você acertou 
           {' '}
            {/* Umar forma de fazer usando reduce do JavaScript
@@ -76,7 +89,9 @@ function ResultWidget( { results }) {
           perguntas
           </p>
         <ul>
+          
           {results.map((result, index)=> (
+           
             <li key={`result__${result}`}>
               
               #
@@ -88,7 +103,7 @@ function ResultWidget( { results }) {
             </li>
           )) }
           
-        </ul>
+        </ul></Widget.Galera>
       </Widget.Content>
     </Widget>
   )
