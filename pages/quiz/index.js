@@ -72,7 +72,7 @@ function ResultWidget( { results }) {
               />
            
       <Widget.Content>
-      <Widget.Galera>
+     
         <p>Você acertou 
           {' '}
            {/* Umar forma de fazer usando reduce do JavaScript
@@ -91,7 +91,7 @@ function ResultWidget( { results }) {
         <ul>
           
           {results.map((result, index)=> (
-           
+            <Widget.Galera>
             <li key={`result__${result}`}>
               
               #
@@ -101,9 +101,10 @@ function ResultWidget( { results }) {
               {result === true ? 'Acertou' : 'Errou'}
               
             </li>
+            </Widget.Galera>
           )) }
           
-        </ul></Widget.Galera>
+        </ul>
       </Widget.Content>
     </Widget>
   )
