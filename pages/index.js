@@ -122,7 +122,7 @@ export default function Home() {
                         as={Link}
                        href={`/quiz/${projectName}___${user}`}
                        >
-                        <Widget.Galera>{`${user}/${projectName}`} {!!name == true && check} </Widget.Galera>
+                        <Widget.Galera>{`${user}/${projectName}`} </Widget.Galera>
                       </Widget.Galera>
                     </li>
                 );

@@ -43,23 +43,37 @@ function LoadingWidget() {
 function ResultWidget( { results }) {
   return(
     <Widget 
-        as={motion.section}
-          transition={{
-            delay: 0.5,
-            duration: 0.8
-          }}
-          variants={{
-            show: {opacity: 1, y: '0' },
-            hidden: {opacity: 0, y:'100%' },
-          }}
-          initial="hidden"
-          animate="show">
+            as={motion.section}
+            transition={{
+              delay: 0.5,
+              duration: 0.8
+            }}
+            variants={{
+              show: {opacity: 1, y: '0' },
+              hidden: {opacity: 0, y:'100%' },
+            }}
+            initial="hidden"
+            animate="show"
+    >
       <Widget.Header>
         <Widget.Logo>
          Tela de Resultado:
         </Widget.Logo>
       </Widget.Header>
+        
+            <img
+              alt="Loading"
+              style={{
+                borderRadius: '80px',
+                width: '100%',
+                height: '230px',
+                objectFit: 'cover',
+              }}
+              src={"https://media.giphy.com/media/5UqQOhnfQbg4IG0utP/giphy.gif"}
+              />
+           
       <Widget.Content>
+      <Widget.Galera>
         <p>Você acertou 
           {' '}
            {/* Umar forma de fazer usando reduce do JavaScript
@@ -76,7 +90,9 @@ function ResultWidget( { results }) {
           perguntas
           </p>
         <ul>
+          
           {results.map((result, index)=> (
+           
             <li key={`result__${result}`}>
               
               #
@@ -88,7 +104,7 @@ function ResultWidget( { results }) {
             </li>
           )) }
           
-        </ul>
+        </ul></Widget.Galera>
       </Widget.Content>
     </Widget>
   )
@@ -204,7 +220,7 @@ vai morre (willUnmount)=== vai sair da tela {pode fazer algo programado}
 React.useEffect
 */
 export default function QuizPage({ externalQuestion, externalBg }) {
-  const [screenState, setScreenState] = React.useState(screenStates.RESULT);
+  const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResult] = React.useState([]);
   const totalQuestion = externalQuestion.length;
   const [currentQuestion, setCurrentQuestion]  = React.useState(0);
