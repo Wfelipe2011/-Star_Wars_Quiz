@@ -69,12 +69,14 @@ export default function Home() {
             }}
             >
               <Input
-                name="nomeDoUsuario"
+                
                 onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
                 placeholder="Nome do Jogador"
                 value={name}
               />
-              <Button type="submit" disabled={name.length === 0}
+              <Button 
+                  type="submit" 
+                  disabled={!name}
                   as={motion.button}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -104,6 +106,7 @@ export default function Home() {
           <Widget.Content>
             <ul >
               {db.external.map((linkExterno) => {
+                const [check, setCheck] = React.useState(false) 
                 const [projectName, user] =  linkExterno
                 .replace('https://', '')
                 .replace('.vercel.app/', '')
@@ -111,12 +114,15 @@ export default function Home() {
                 .split('.');
 
               return (
-                    <li key={linkExterno}  >
+                    <li onClick={()=>{
+                      !!name ? setCheck(true) : setCheck(false)   
+                      }}
+                     key={linkExterno}  >
                       <Widget.Galera
                         as={Link}
                        href={`/quiz/${projectName}___${user}`}
                        >
-                        <Widget.Galera>{`${user}/${projectName}`}</Widget.Galera>
+                        <Widget.Galera>{`${user}/${projectName}`} {!!name == true && check} </Widget.Galera>
                       </Widget.Galera>
                     </li>
                 );

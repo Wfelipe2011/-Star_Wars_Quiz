@@ -43,9 +43,8 @@ export default function App({ Component, pageProps }) {
       <ThemeProvider theme={theme}>
      
         <Component {...pageProps} />
-        <iframe width="1" height="1" 
-        src={db.sound}
-         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1" height="1"
+         src="https://www.youtube.com/embed/pZAZ2x-KNf0?controls=0?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
       </ThemeProvider>
     </>

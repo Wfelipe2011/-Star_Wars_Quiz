@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import {motion} from 'framer-motion';
 import Widget from '../../components/Widget';
 import QuizBackground from '../../components/QuizBackground';
 import QuizLogo from '../../components/QuizLogo';
@@ -42,7 +43,7 @@ function LoadingWidget() {
 function ResultWidget( { results }) {
   return(
     <Widget 
-    as={motion.section}
+        as={motion.section}
           transition={{
             delay: 0.5,
             duration: 0.8
